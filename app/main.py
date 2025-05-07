@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routers import laws
+from routers import law_meta
 
 app = FastAPI()
 
@@ -7,5 +7,5 @@ app = FastAPI()
 def read_root():
     return "Hello World"
 
-app.include_router(laws.router)
+app.include_router(law_meta.router)
 
